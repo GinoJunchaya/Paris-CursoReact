@@ -1,0 +1,40 @@
+.header-container{
+    background: #ececec;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-logo-img{
+    height: 50px;
+}
+
+.header-img{
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.header-menu{
+    margin: 0 auto;
+    margin-left: 10px;
+    display: flex;
+    height: 100%;
+}
+
+.button_menu{
+    background: #cacaca;
+    color: #414141;
+    font-weight: bold;
+    border: 0px solid transparent;
+    margin-left: 5px;
+}
+
+.button_menu:hover{
+    background: #414141;
+    color: #cacaca;
+    border: 1px solid #cacaca;
+}

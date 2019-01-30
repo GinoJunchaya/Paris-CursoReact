@@ -1,0 +1,14 @@
+.footer-container{
+    background: #3e2619;
+    height: 200px;
+    color: white;
+    padding: 10px;
+}
+
+.btn-transparente{
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
