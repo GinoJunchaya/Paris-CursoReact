@@ -4,6 +4,11 @@ import Footer from '../../components/Footer';
 import Body from './Body';
 
 class Productos extends Component{
+
+    componentWillMount(){
+        document.title = "Paris | Productos";        
+    }
+
     render(){
         return(
             <section>

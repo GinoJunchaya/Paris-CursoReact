@@ -4,6 +4,11 @@ import Footer from '../../components/Footer';
 import Body from './Body';
 
 class Home extends Component{
+
+    componentWillMount(){
+        document.title = "Paris | Home";
+    }
+
     render(){
         return(
             <section>

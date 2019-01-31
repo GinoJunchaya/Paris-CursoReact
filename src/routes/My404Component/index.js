@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 class My404Component extends Component{
+
+    componentWillMount(){
+        document.title = "Paris | 404";
+    }
+
     render(){
         return(
             <section>
