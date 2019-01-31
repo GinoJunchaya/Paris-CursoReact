@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Body from './Body';
 
-class Home extends Component{
+class Sabores extends Component{
     render(){
         return(
             <section>
@@ -15,4 +15,4 @@ class Home extends Component{
     }
 }
 
-export default Home;
+export default Sabores;
