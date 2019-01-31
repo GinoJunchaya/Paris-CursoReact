@@ -9,8 +9,8 @@ class Header extends Component{
         var logo = require("./logo-a.png");
         return(
             <section className="header-container">
-                <section className="header-img">
-                    <img src={logo} className="header-logo-img"/>
+                <section className="header-img" onClick={this.handleHome.bind(this)}>
+                    <img src={logo} className="header-logo-img" alt=""/>
                 </section>
                 <section className="header-menu">
                     <Button className="button_menu" onClick={this.handleProductos.bind(this)}>Productos</Button>
@@ -34,6 +34,11 @@ class Header extends Component{
     handleLocales(e){
         e.preventDefault();
         this.props.history.push("/locales");        
+    }
+
+    handleHome(e){
+        e.preventDefault();
+        this.props.history.push("/");        
     }
 }
 

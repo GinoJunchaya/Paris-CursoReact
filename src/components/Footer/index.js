@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import './footer.css'
+import {IoMdBriefcase, IoIosCall} from 'react-icons/io';
+import {FaMapMarker} from 'react-icons/fa';
 
 import {
-    Glyphicon,
     Button
 } from 'react-bootstrap';
 
@@ -11,29 +12,36 @@ class Footer extends Component{
         return(
             <section className="footer-container">
                 <section className="col-md-6">
-                    <p><h3>Casa Central</h3></p>
+                    <p><h5>Casa Central</h5></p>
                     <p>
-                        <h4>
-                            <Glyphicon glyph="glyphicon glyphicon-map-marker"/>&nbsp;&nbsp;
+                        <h6>
+                            <FaMapMarker />&nbsp;&nbsp;
                             <span>Ntra. Sra. de la Asunción 1669 Asunción - Paraguay</span>
-                        </h4>
+                        </h6>
                     </p>
                     <p>
-                        <h4>
-                            <Glyphicon glyph="glyphicon glyphicon-earphone"/>&nbsp;&nbsp;                           
+                        <h6>
+                            <IoIosCall />&nbsp;&nbsp;
                             <span>+595 21 2382222</span>
-                        </h4>
+                        </h6>
                     </p>
                     <Button className="btn-transparente">
-                        <Glyphicon glyph="glyphicon glyphicon-briefcase"/>&nbsp;&nbsp;
+                        <IoMdBriefcase />&nbsp;&nbsp;
                         <span>Trabajá con nosotros</span>
                     </Button>
                 </section>
-                <section className="col-md-3">
-
+                <section className="col-md-3 links-container">
+                    <h5>Nosotros</h5>
+                    <h6>La empresa</h6>
+                    <h6>Trabajá con nosotros</h6>
+                    <h6>Politicas de privacidad</h6>
                 </section>
-                <section className="col-md-3">                            
-                </section>                                
+                <section className="col-md-3 links-container">
+                    <h5>Servicios</h5>
+                    <h6>La empresa</h6>
+                    <h6>Trabajá con nosotros</h6>
+                    <h6>Politicas de privacidad</h6>
+                </section>
             </section>
         );
     }
