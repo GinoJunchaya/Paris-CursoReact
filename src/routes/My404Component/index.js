@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class My404Component extends Component{
     render(){
         return(
-            <section>
+            <section style={{paddingTop: "100px"}}>
                 <span>Page not found!</span>
             </section>
         );

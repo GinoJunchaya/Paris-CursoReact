@@ -13,12 +13,17 @@ class Header extends Component{
                     <img src={logo} className="header-logo-img"/>
                 </section>
                 <section className="header-menu">
-                    <Button className="button_menu">Productos</Button>
-                    <Button className="button_menu">Sabores</Button>
-                    <Button className="button_menu">Locales</Button>                    
+                    <Button className="button_menu" href="/productos">Productos</Button>
+                    <Button className="button_menu" href="/sabores">Sabores</Button>
+                    <Button className="button_menu" href="/locales">Locales</Button>                    
                 </section>
             </section>
         );
+    }
+
+    handleRouteProductos(e){
+        e.preventDefault();
+        this.props.history.push("/productos");        
     }
 }
 
